@@ -25,3 +25,11 @@ screens and may not show properly on other sizes of screens
 tem, java version, etc.).
 (c) Compile the code.
 ```
+
+# Help and Support 
+ To know how to use the program, you can use the help tab at the top right corner of the screen after running the program. 
+ I will commit a user manual and developer manual to the respository in the near future.
+ for support you can contact me at
+ ```
+ mohammad@alkhufash.com
+ ```
