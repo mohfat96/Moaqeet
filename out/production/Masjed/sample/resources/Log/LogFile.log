@@ -1,0 +1,113 @@
+Jun 25, 2019 6:08:57 PM sample.DatabaseManager.DatabaseConnection open
+INFO: Connection with database is Open!
+Jun 25, 2019 6:08:57 PM sample.DatabaseManager.DatabaseConnection close
+INFO: connection with database is closed successfully!
+Jun 25, 2019 5:42:27 PM sample.LoggingManager.Logger close
+INFO: __________________________________ End of session! __________________________________
+Jun 25, 2019 5:41:43 PM sample.DatabaseManager.DatabaseConnection open
+INFO: Connection with database is Open!
+Jun 25, 2019 5:41:43 PM sample.DatabaseManager.DatabaseConnection close
+INFO: connection with database is closed successfully!
+Jun 25, 2019 5:42:11 PM sample.LoggingManager.Logger close
+INFO: __________________________________ End of session! __________________________________
+Jun 25, 2019 8:40:50 PM sample.DatabaseManager.DatabaseConnection open
+INFO: Connection with database is Open!
+Jun 25, 2019 8:40:50 PM sample.DatabaseManager.DatabaseConnection close
+INFO: connection with database is closed successfully!
+Jun 25, 2019 8:41:29 PM sample.LoggingManager.Logger close
+INFO: __________________________________ End of session! __________________________________
+Jun 28, 2019 2:32:40 PM sample.DatabaseManager.DatabaseConnection open
+INFO: Connection with database is Open!
+Jun 28, 2019 2:32:40 PM sample.DatabaseManager.DatabaseConnection close
+INFO: connection with database is closed successfully!
+Jun 28, 2019 1:24:19 PM sample.LoggingManager.Logger close
+INFO: __________________________________ End of session! __________________________________
+Jun 28, 2019 1:23:34 PM sample.DatabaseManager.DatabaseConnection open
+INFO: Connection with database is Open!
+Jun 28, 2019 1:23:34 PM sample.DatabaseManager.DatabaseConnection close
+INFO: connection with database is closed successfully!
+Jun 28, 2019 1:24:13 PM sample.LoggingManager.Logger close
+INFO: __________________________________ End of session! __________________________________
+Jun 28, 2019 3:15:13 PM sample.DatabaseManager.DatabaseConnection open
+INFO: Connection with database is Open!
+Jun 28, 2019 3:15:13 PM sample.DatabaseManager.DatabaseConnection close
+INFO: connection with database is closed successfully!
+Jun 28, 2019 3:15:21 PM sample.GUI.Controller Import from file
+SEVERE: null
+java.lang.NullPointerException
+	at sample.GUI.Controller.lambda$initialize$0(Controller.java:173)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.control.MenuItem.fire(MenuItem.java:462)
+	at com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1405)
+	at com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer.lambda$createChildren$343(ContextMenuContent.java:1358)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:394)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$353(GlassViewEventHandler.java:432)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:431)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$147(WinApplication.java:177)
+	at java.lang.Thread.run(Thread.java:748)
+
+Jun 28, 2019 3:15:22 PM sample.LoggingManager.Logger close
+INFO: __________________________________ End of session! __________________________________
+Jun 28, 2019 3:16:23 PM sample.DatabaseManager.DatabaseConnection open
+INFO: Connection with database is Open!
+Jun 28, 2019 3:16:23 PM sample.DatabaseManager.DatabaseConnection close
+INFO: connection with database is closed successfully!
+Jun 28, 2019 3:16:35 PM sample.LoggingManager.Logger close
+INFO: __________________________________ End of session! __________________________________
+Jun 28, 2019 3:21:59 PM sample.DatabaseManager.DatabaseConnection open
+INFO: Connection with database is Open!
+Jun 28, 2019 3:21:59 PM sample.DatabaseManager.DatabaseConnection close
+INFO: connection with database is closed successfully!
+Jun 28, 2019 3:22:06 PM sample.LoggingManager.Logger close
+INFO: __________________________________ End of session! __________________________________
+Jun 28, 2019 3:27:50 PM sample.DatabaseManager.DatabaseConnection open
+INFO: Connection with database is Open!
+Jun 28, 2019 3:27:51 PM sample.DatabaseManager.DatabaseConnection close
+INFO: connection with database is closed successfully!
+Jun 28, 2019 3:28:02 PM sample.LoggingManager.Logger close
+INFO: __________________________________ End of session! __________________________________
+Jun 28, 2019 4:18:01 PM sample.DatabaseManager.DatabaseConnection open
+INFO: Connection with database is Open!
+Jun 28, 2019 4:18:01 PM sample.DatabaseManager.DatabaseConnection close
+INFO: connection with database is closed successfully!
+Jun 28, 2019 4:18:04 PM sample.LoggingManager.Logger close
+INFO: __________________________________ End of session! __________________________________
+Jun 28, 2019 4:20:06 PM sample.DatabaseManager.DatabaseConnection open
+INFO: Connection with database is Open!
+Jun 28, 2019 4:20:06 PM sample.DatabaseManager.DatabaseConnection close
+INFO: connection with database is closed successfully!
+Jun 28, 2019 4:20:12 PM sample.LoggingManager.Logger close
+INFO: __________________________________ End of session! __________________________________

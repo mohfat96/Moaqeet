@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="basePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GUI.Controller">
+   <children>
+      <ImageView fx:id="img" fitHeight="1080.0" fitWidth="1920.0" layoutX="155.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <GridPane fx:id="gridPane" layoutY="796.0" prefHeight="280.0" prefWidth="1920.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="225.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="fajrLabel" text="00:00" textFill="WHITE" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Garamond Bold" size="120.0" />
+               </font>
+            </Label>
+            <Label fx:id="dhuhrLabel" text="00:00" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Garamond Bold" size="120.0" />
+               </font>
+            </Label>
+            <Label fx:id="asrLabel" text="00:00" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Garamond Bold" size="120.0" />
+               </font>
+            </Label>
+            <Label fx:id="magribLabel" text="00:00" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Garamond Bold" size="120.0" />
+               </font>
+            </Label>
+            <Label fx:id="ishaLabel" text="00:00" textFill="WHITE" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Garamond Bold" size="120.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Label fx:id="hadith" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="1224.0" layoutY="436.0" prefHeight="587.0" prefWidth="1812.0" text="بسم الله الرحمن الرحيم" textAlignment="RIGHT" visible="false" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="436.0">
+         <font>
+            <Font name="Calibri" size="70.0" />
+         </font></Label>
+      
+      <Label fx:id="clk" contentDisplay="CENTER" layoutX="811.0" layoutY="733.0" prefHeight="190.0" prefWidth="551.0" text="00:00" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="120.0" />
+         </font>
+      </Label>
+      <Label fx:id="clkSeconds" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="1024.0" layoutY="800.0" maxWidth="-Infinity" prefWidth="120.0" text="00" textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="75.0" />
+         </font>
+      </Label>
+      <Label fx:id="dte" layoutX="35.0" layoutY="647.0" prefHeight="159.0" prefWidth="513.0" text="00.00.0000" textFill="WHITE">
+         <font>
+            <Font name="Garamond" size="120.0" />
+         </font>
+      </Label>
+      <Label fx:id="tag" layoutX="33.0" layoutY="767.0" prefHeight="159.0" prefWidth="641.0" text="Sunday" textFill="WHITE">
+         <font>
+            <Font name="Garamond" size="100.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="menu" layoutX="-3.0" layoutY="3.0" prefHeight="25.0" prefWidth="138.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="importMenu" mnemonicParsing="false" text="Import" />
+                  <MenuItem fx:id="closeMenu" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Friday Prayer">
+                     <graphic>
+                        <TextField fx:id="freitagsgebetField" promptText="Zeit Einfügen HH:mm" />
+                     </graphic></MenuItem>
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="aboutMenu" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <GridPane fx:id="gridPane1" layoutX="-2.0" layoutY="352.0" prefHeight="280.0" prefWidth="1920.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="fajrIqamaLabel" alignment="TOP_CENTER" contentDisplay="TOP" text="Zeit bis Iqama" textAlignment="CENTER" textFill="WHITE" visible="false" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Garamond" size="64.0" />
+               </font>
+            </Label>
+            <Label fx:id="dhuhrIqamaLabel" alignment="TOP_CENTER" contentDisplay="TOP" text="Zeit bis Iqama" textAlignment="CENTER" textFill="WHITE" visible="false" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Garamond" size="64.0" />
+               </font>
+            </Label>
+            <Label fx:id="asrIqamaLabel" alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="111.0" prefWidth="360.0" text="Zeit bis Iqama" textAlignment="CENTER" textFill="WHITE" visible="false" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Garamond" size="64.0" />
+               </font>
+            </Label>
+            <Label fx:id="magribIqamaLabel" alignment="TOP_CENTER" contentDisplay="TOP" text="Zeit bis Iqama" textAlignment="CENTER" textFill="WHITE" visible="false" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Garamond" size="64.0" />
+               </font>
+            </Label>
+            <Label fx:id="ishaIqamaLabel" alignment="TOP_CENTER" contentDisplay="TOP" text="Zeit bis Iqama" textAlignment="CENTER" textFill="WHITE" visible="false" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Garamond" size="64.0" />
+               </font>
+            </Label>
+            <Label fx:id="fajrIqamaLabel1" alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" layoutX="22.0" layoutY="113.0" prefHeight="270.0" prefWidth="178.0" text="30" textAlignment="CENTER" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Garamond Bold" size="90.0" />
+               </font>
+            </Label>
+            <Label fx:id="dhuhrIqamaLabel1" alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" prefHeight="270.0" prefWidth="178.0" text="30" textAlignment="CENTER" textFill="WHITE" visible="false" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Garamond Bold" size="90.0" />
+               </font>
+            </Label>
+            <Label fx:id="asrIqamaLabel1" alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" layoutX="113.0" layoutY="15.0" prefHeight="228.0" prefWidth="178.0" text="30" textAlignment="CENTER" textFill="WHITE" visible="false" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Garamond Bold" size="90.0" />
+               </font>
+            </Label>
+            <Label fx:id="magribIqamaLabel1" alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" layoutX="497.0" layoutY="15.0" prefHeight="270.0" prefWidth="178.0" text="30" textAlignment="CENTER" textFill="WHITE" visible="false" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Garamond Bold" size="90.0" />
+               </font>
+            </Label>
+            <Label fx:id="ishaIqamaLabel1" alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" layoutX="113.0" layoutY="15.0" prefHeight="270.0" prefWidth="178.0" text="30" textAlignment="CENTER" textFill="WHITE" visible="false" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Garamond Bold" size="90.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Label fx:id="tagArabic" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="1338.0" layoutY="667.0" prefHeight="159.0" prefWidth="513.0" text="الإثنين" textFill="WHITE">
+         <font>
+            <Font name="DecoType Naskh Extensions" size="100.0" />
+         </font>
+      </Label>
+      <Label fx:id="dteArabic" alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="1351.0" layoutY="544.0" prefHeight="254.0" prefWidth="513.0" text="5 ذو الحجة" textFill="WHITE">
+         <font>
+            <Font name="DecoType Naskh Swashes" size="100.0" />
+         </font>
+      </Label>
+      <Label fx:id="clk1" contentDisplay="CENTER" layoutX="34.0" layoutY="869.0" prefHeight="190.0" prefWidth="401.0" text="Freitagsgebet: " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Garamond" size="62.0" />
+         </font>
+      </Label>
+      <Label fx:id="clk11" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="1528.0" layoutY="795.0" prefHeight="246.0" prefWidth="329.0" text="صلاة الجمعة: " textAlignment="RIGHT" textFill="WHITE">
+         <font>
+            <Font name="DecoType Naskh Swashes" size="90.0" />
+         </font>
+      </Label>
+      <Label fx:id="freitagsgebetLabel1" contentDisplay="CENTER" layoutX="382.0" layoutY="873.0" prefHeight="190.0" prefWidth="139.0" text="13:30" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="62.0" />
+         </font>
+      </Label>
+      <Label fx:id="freitagsgebetLabel2" contentDisplay="CENTER" layoutX="1412.0" layoutY="866.0" prefHeight="190.0" prefWidth="139.0" text="13:30" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="62.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
