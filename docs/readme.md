@@ -10,6 +10,7 @@ screens and may not show properly on other sizes of screens
 # Installation
 
 1. Executable jar
+
     If you just want to run the program:
 
 ```
@@ -20,6 +21,7 @@ screens and may not show properly on other sizes of screens
 (e) Run the jar file ”Moaqeet.jar” to run the program.
 ```
 2. Source code
+
     If you want to compile/change the source code:
 
 ```
