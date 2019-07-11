@@ -13,7 +13,7 @@ screens and may not show properly on other sizes of screens
     If you just want to run the program:
 
 ```
-(a) Download the installation file ”moaqeet.exe”.
+(a) Download the installation file ”Moaqeet.exe”.
 (b) Run it using admin permission.
 (c) Choose where you want to install the program.
 (d) Click next.
