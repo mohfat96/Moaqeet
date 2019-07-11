@@ -21,8 +21,7 @@ screens and may not show properly on other sizes of screens
 
 ```
 (a) Clone the repository.
-(b) Import the required libraries,which can be found in the lib folder.
-(You may have to import other libraries dependent on your sys-
+(b) Import the required libraries,which can be found in the lib folder. (You may have to import other libraries dependent on your sys-
 tem, java version, etc.).
 (c) Compile the code.
 ```
