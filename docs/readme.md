@@ -14,9 +14,10 @@ screens and may not show properly on other sizes of screens
 
 ```
 (a) Download the installation file ”moaqeet.exe”.
-(b) Click next.
+(b) Run it using admin permission.
 (c) Choose where you want to install the program.
-(d) Run the jar file ”Moaqeet.jar” to run the program.
+(d) Click next.
+(e) Run the jar file ”Moaqeet.jar” to run the program.
 ```
 2. Source code
     If you want to compile/change the source code:
