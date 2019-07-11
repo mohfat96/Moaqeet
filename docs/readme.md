@@ -28,7 +28,8 @@ tem, java version, etc.).
 
 # Help and Support 
  To know how to use the program, you can use the help tab at the top right corner of the screen after running the program. 
- I will commit a user manual and developer manual to the respository in the near future.
+ That been said, I will commit a user manual and developer manual to the respository in the near future.
+ 
  for support you can contact me at
  ```
  mohammad@alkhufash.com
