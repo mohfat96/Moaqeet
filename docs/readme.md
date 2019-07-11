@@ -28,4 +28,3 @@ screens and may not show properly on other sizes of screens
 tem, java version, etc.).
 (c) Compile the code.
 ```
-## 1
