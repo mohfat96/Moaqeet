@@ -7,6 +7,8 @@ displayed on a Monitor/Display in the Mosque.
 Note: The program is designed to work on Full HD (1920×1080)
 screens and may not show properly on other sizes of screens
 
+![Image of Moaqeet GUI](https://github.com/mohfat96/Moaqeet/blob/master/docs/Moaqeet.jpg)
+
 # Installation
 
 **1. Executable jar** (If you just want to test/run the program)
