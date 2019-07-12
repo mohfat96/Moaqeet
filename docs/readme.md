@@ -9,22 +9,28 @@ screens and may not show properly on other sizes of screens
 
 # Installation
 
-1. Executable jar
-    If you just want to run the program:
-
+**1. Executable jar** (If you just want to test/run the program)
 ```
-(a) Download the installation file ”moaqeet.exe”.
-(b) Click next.
+(a) Download the installation file ”Moaqeet.exe”.
+(b) Run it using admin permission.
 (c) Choose where you want to install the program.
-(d) Run the jar file ”Moaqeet.jar” to run the program.
+(d) Click next.
+(e) Run the jar file ”Moaqeet.jar” to run the program.
 ```
-2. Source code
-    If you want to compile/change the source code:
+**2. Source code**  (If you want to compile/change the source code)
 
 ```
 (a) Clone the repository.
-(b) Import the required libraries,which can be found in the lib folder.
-(You may have to import other libraries dependent on your sys-
+(b) Import the required libraries, which can be found in the lib folder. (You may have to import other libraries dependent on your sys-
 tem, java version, etc.).
 (c) Compile the code.
 ```
+
+# Help and Support 
+ To know how to use the program, you can use the help tab at the top right corner of the screen after running the program. 
+ That been said, I will commit a user manual and developer manual to the respository in the near future.
+ 
+ for support you can contact me at
+ ```
+ mohammad@alkhufash.com
+ ```
