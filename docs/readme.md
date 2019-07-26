@@ -30,7 +30,7 @@ tem, java version, etc.).
 ```
 
 # Help and Support 
- To know how to use the program, you can use the help tab at the top right corner of the screen after running the program. 
+ To know how to use the program, you can press the help menu at the top right corner of the programm's screen.
  That been said, I will commit a user manual and developer manual to the respository in the near future.
  
  for support you can contact me at
