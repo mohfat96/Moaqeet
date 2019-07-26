@@ -6,9 +6,9 @@ import javafx.animation.Timeline;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 import sample.ImagesManager.Background;
+import sample.LoggingManager.Logger;
 import sample.TimeManager.Counter;
 import sample.TimeManager.Prayer;
 
@@ -20,19 +20,15 @@ public class Notification {
         Ready, Playing
     }
 
-    private Flicker flicker = new Flicker();
-    private Flicker flicker2 =  new Flicker();
-    Timeline iqamaTime;
-    Status status;
-    Timeline show;
-    Timeline hide;
-    AnchorPane anchorPane;
+    private Flicker iqamaFlicker = new Flicker();
+    private Flicker prayerFlicker =  new Flicker();
+    private Timeline iqamaTime;
+    private Status status;
     private ImageView imageView;
-    private  Background main;
-    Prayer prayer;
-    Label iqamaTimeLabel;
-    Image mainImage;
-    Counter counter = new Counter();
+    private Prayer prayer;
+    private Label iqamaTimeLabel;
+    private Image mainImage;
+    private Counter counter = new Counter();
 
 
     public Notification(ImageView imageView , Background main) {
@@ -41,20 +37,20 @@ public class Notification {
     }
 
 
-    public void setPrayer(@NotNull Prayer prayer) {
+    public void setPrayer(@NotNull Prayer prayer, boolean sound) {
         if (prayer != null) {
             this.prayer = prayer;
             status = Status.Ready;
             iqamaTimeLabel = prayer.getIqamaLabel();
-            flicker2.setPrayer(prayer.getPrayerLabel());
-            flicker.setPrayer(iqamaTimeLabel);
+            prayerFlicker.setPrayer(prayer.getPrayerLabel() , sound);
+            iqamaFlicker.setPrayer(iqamaTimeLabel , sound);
         }
 
     }
 
     public void play() {
         counter.reset();
-        flicker2.play();
+        prayerFlicker.play();
         if(iqamaTime != null){
             iqamaTime.stop();
             iqamaTime = null;
@@ -75,10 +71,10 @@ public class Notification {
                 } else {
                     if (rest == 0) {
                         iqamaTimeLabel.setText("" + rest);
-                        flicker.play();
+                        iqamaFlicker.play();
                         System.out.println("Flicker set!");
                     } else {
-                       flicker.stop();
+                        iqamaFlicker.stop();
                         System.out.println("iqama time set!");
                         iqamaTimeLabel.setText("" + rest);
                     }
@@ -87,8 +83,11 @@ public class Notification {
             iqamaTime.setCycleCount(time + 1);
             iqamaTime.play();
 
-        } else
+        } else {
             System.out.println("notification is not ready set a new prayer!");
+            Logger.info(Notification.class.getName() , "play" , "notification is not ready set a new prayer!" );
+        }
+
     }
 
 

@@ -5,6 +5,7 @@ import com.sun.istack.internal.NotNull;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 
+import java.time.Duration;
 import java.time.LocalTime;
 
 
@@ -62,10 +63,10 @@ public class Prayer {
 
     public void setPrayerTime(LocalTime prayerTime , LocalTime iqamaTime) {
         this.prayerTime = prayerTime;
-        hour = prayerTime.getHour();
-        minute = prayerTime.getMinute();
+        this.hour = prayerTime.getHour();
+        this.minute = prayerTime.getMinute();
         prayerLabel.setText(prayerTime.toString());
-        this.iqamaTime = iqamaTime.getMinute() - minute;
+        this.iqamaTime = ((int) Duration.between(prayerTime, iqamaTime).toMinutes());
         isSet = true;
 
     }

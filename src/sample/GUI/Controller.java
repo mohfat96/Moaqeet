@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.net.URL;
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -224,10 +225,11 @@ public class Controller implements Initializable {
     }
 
 
-    private void findPrayer(LocalTime time) { //finds the right prayer and returns it back
+    private void findPrayer(LocalTime time) { //finds the right prayer and plays the notification
         int hours = time.getHour();
         int min = time.getMinute();
         boolean found = false;
+        boolean sound = true;
 
         for (Prayer prayer : prayers) { // goes through the prayers and checks the time
             if (prayer.isSet() && prayer.getHour() == hours && prayer.getMinute() == min) {
@@ -235,7 +237,14 @@ public class Controller implements Initializable {
                 if ((currPrayer == null || prayer.getHour() != currPrayer.getHour()
                         && prayer.getMinute() != currPrayer.getMinute())) {
                     currPrayer = prayer;
-                    notification.setPrayer(currPrayer);
+                    if (today.getDate().getDayOfWeek() == DayOfWeek.FRIDAY && currPrayer.getPrayerType() == PrayerType.Dhuhr){ // don't play the sound on friday!
+                        sound = false;
+                    }
+                    else
+                    {
+                        sound = true;
+                    }
+                    notification.setPrayer(currPrayer , sound);
                     notification.play();
                 }
 

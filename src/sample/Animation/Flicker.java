@@ -21,6 +21,7 @@ public class Flicker {
 
     Media media ;
     MediaPlayer mediaPlayer ;
+    boolean sound = true;
 
     Status status;
 
@@ -31,7 +32,8 @@ public class Flicker {
             mediaPlayer.setVolume(1);
     }
 
-    public void setPrayer(Label prayer){
+    public void setPrayer(Label prayer , boolean sound){
+            this.sound = sound;
             this.prayer = prayer;
             mediaPlayer.stop();
             flicker.stop();
@@ -48,7 +50,9 @@ public class Flicker {
             System.out.println("flicker is playing");
         status = Status.playing;
         flicker.play();
-        mediaPlayer.play();
+        if(sound){
+            mediaPlayer.play();
+        }
         }
     }
 
